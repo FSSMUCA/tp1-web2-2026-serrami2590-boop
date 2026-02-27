@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 5</h1>
+      <h1>Ma fiche de présentation</h1>
+      <p id="nomComplet">...</p>
+      <p id="age">...</p>
+      <p id="ville">...</p>
+      <p id="presentation">...</p>
+
+    <script>
+      /*Déclarez les variables : prenom, nom, age, ville avec vos informations.*/
+      let preNom = "ERRAMI";
+      let Nom = "SAID";
+      let Age = 20;
+      let Ville = "MARRAKECH";
+      /* Utilisez document.getElementById("nomComplet").innerHTML pour afficher "Prénom NOM" dans le paragraphe correspondant.*/
+      let afficheNomComplet = document.getElementById("nomComplet").innerHTML;
+      document.getElementById("nomComplet").innerHTML = preNom + Nom   ;
+      /* Utilisez document.getElementById("age").innerHTML pour afficher "Prénom NOM" dans le paragraphe correspondant*/
+      let changeAge = document.getElementById("age").innerHTML;
+      document.getElementById("age").innerHTML = Age;
+      /*Utilisez document.getElementById("ville").innerHTML pour afficher "Prénom NOM" dans le paragraphe correspondant*/
+      let changeVille = document.getElementById("ville").innerHTML;
+      document.getElementById("ville").innerHTML = Ville;
+      /*change de paragraph presentation */
+      let changePresentation = document.getElementById("presentation").innerHTML;
+      document.getElementById("presentation").innerHTML ="je m'appelle SAID ERRAMI, j'ai 20 ans et j'habite a MARRAKECH";
+      /*changement de title */
+      changeTitle = document.title;
+      document.title = "Fiche de" + preNom; 
+    </script>
+  </body>
+</html>
